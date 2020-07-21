@@ -3,9 +3,15 @@ description: 'Set .net file assembly version'
 branding:
   icon: 'tag'
   color: 'gray-dark'
+inputs:
+  version:
+    description: 'version# to set'
+    required: true
 outputs:
   tag:
-    description: '.net version'
+    description: 'last tag version'
+  version:
+    description: 'next tag version'
 runs:
   using: 'node12'
   main: 'main.js'
