@@ -1,0 +1,23 @@
+{
+  "name": "github-set-net-version",
+  "version": "1.0.0",
+  "description": "Sets the .net assembly version.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cdotyone/github-set-net-version.git"
+  },
+  "keywords": [],
+  "author": "Chris Doty",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cdotyone/github-set-net-version/issues"
+  },
+  "homepage": "https://github.com/cdotyone/github-set-net-version#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4"
+  }
+}

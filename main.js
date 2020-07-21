@@ -1,5 +1,5 @@
 const core = require('@actions/core');
-let path = require("path");
+const path = require("path");
 const fs = require('fs');
 const glob = require('glob');
 const util = require('util');
