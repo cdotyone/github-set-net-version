@@ -7,11 +7,6 @@ inputs:
   version:
     description: 'version# to set'
     required: true
-outputs:
-  tag:
-    description: 'last tag version'
-  version:
-    description: 'next tag version'
 runs:
   using: 'node12'
   main: 'main.js'
