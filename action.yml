@@ -1,0 +1,11 @@
+name: 'Get .Net Version'
+description: 'Set .net file assembly version'
+branding:
+  icon: 'tag'
+  color: 'gray-dark'
+outputs:
+  tag:
+    description: '.net version'
+runs:
+  using: 'node12'
+  main: 'main.js'
