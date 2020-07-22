@@ -1096,6 +1096,11 @@ if(version==="0")  {
     process.exit(1);
     return;
 }
+
+if(version.indexOf('-')>0) {
+    version=version.split('-')[0];
+}
+
 if(version==="PACKAGE") {
     let data = fs.readFileSync(__webpack_require__.ab + "package.json", 'utf8');
     let json = JSON.parse(data);
