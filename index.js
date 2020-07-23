@@ -27,6 +27,8 @@ if(version.indexOf('-')>0) {
     version=version.split('-')[0];
 }
 
+core.setOutput('version', version);
+
 if(version==="PACKAGE") {
     let data = fs.readFileSync(path.join(process.cwd(),'package.json'), 'utf8');
     let json = JSON.parse(data);
