@@ -1085,7 +1085,7 @@ console.log(files);
 const readFile = util.promisify(fs.readFile);
 const writeFile = util.promisify(fs.writeFile);
 
-let version = core.getInput('version') || '0';
+let version = core.getInput('version') || 'PACKAGE';
 let rev = core.getInput('revision') || "0";
 let setCopy = false;
 let showTrace = false;
@@ -1117,6 +1117,7 @@ if(!rev) rev='0';
 if(files.length===1) {
 
     let assemblyVersion = version;
+
     while(assemblyVersion.split('.').length<4) {
         assemblyVersion+='.0';
     }
@@ -1129,6 +1130,9 @@ if(files.length===1) {
         fileVersion = parts.join('.');
     }
     fileVersion+='.'+rev;
+
+    assemblyVersion=assemblyVersion.replace(/v/g,'');
+    fileVersion=fileVersion.replace(/v/g,'');
 
     console.log("setNetVersion: ",fileVersion);
 
