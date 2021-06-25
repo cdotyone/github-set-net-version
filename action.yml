@@ -7,9 +7,6 @@ inputs:
   version:
     description: 'version# to set'
     required: true
-outputs:
-  version:
-    description: 'next tag version'
 runs:
   using: 'node12'
   main: 'dist/index.js'
