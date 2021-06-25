@@ -9,10 +9,8 @@ jobs:
   generate:
     steps:
       - uses: actions/checkout@v1
-      - name: 'Get Previous tag'
+      - name: 'Set .net File Version'
         id: semver
         uses: "cdotyone/github-next-version@main"
-        env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
 ```
 
